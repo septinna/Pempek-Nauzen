@@ -1,0 +1,344 @@
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+.box {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+  
+.box::after {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); /* Ubah nilai alpha (0.1) sesuai kebutuhan */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Atur durasi dan jenis transisi */
+}
+  
+.box:hover::after {
+  opacity: 1;
+}
+  
+.box:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: opacity .0.6s ease;
+}
+  
+.box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+  
+body{
+  background-color: rgb(207, 175, 116);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+  
+.kontak{
+  color: rgb(54, 54, 54);
+}
+
+ul.list-unstyled li a {
+  color: rgb(54, 54, 54);
+}
+.container .mt-1{
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(248, 242, 242);
+}
+  
+.container .mt-7{
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+  
+.container .mt-9{
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+      text-align: left;
+      background-color: rgb(255, 255, 255);
+}
+  
+.container .mt-9 h2{
+    text-align: center;
+}
+
+.col-md-12{
+    padding-left: 0px;
+}
+  
+.col-md-12 img{
+    height: 100%;
+    width: 100%;
+}
+  
+.custom-link {
+    font-size: 20px;
+}
+  
+.custom-span {
+    font-size: 1.8em;
+    color: #096109;
+    font-family: 'Monchila', sans-serif;
+}
+    
+.dive {
+    background-color: rgb(248, 197, 148); 
+}
+  
+.navbar {
+    background-color: rgb(248, 197, 148);
+    border: 1px solid rgb (184, 240, 244); 
+    color: rgb(0, 0, 0); 
+    
+}
+ 
+  .dive a {
+      color: black;
+  }
+  
+  .dropdown-menu{
+      background-color: rgba(255, 255, 255, 0.9); /* Warna putih dengan kejelasan 50% */
+  }
+
+  
+  .review-card {
+      border: 3px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: rgb(204, 204, 204);
+  }
+  
+  header h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    
+    main {
+      padding: 20px;
+      padding-top: 75px;
+    }
+    
+    
+  
+    .service {
+        margin: 10px;
+        padding: 20px;
+        border: 3px solid #ddd;
+        background: rgb(234, 232, 232);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+  .button {
+      color: #fff; /* Warna teks tombol */
+      border: none; /* Hilangkan border */
+      padding: 10px 20px; /* Padding tombol */
+      border-radius: 5px; /* Bentuk border */
+      cursor: pointer; /* Ubah kursor saat diarahkan ke tombol */
+  }
+    
+  .button:hover {
+      background-color: #0056b3; 
+  }
+  
+  
+/* Card Image */
+.card-img-top {
+    height: 300px; /* Tinggi gambar card */
+    object-fit: cover; /* Gambar akan mengisi area tanpa mengubah aspek rasio */
+    max-width: 50%;   
+    
+
+  }
+.custom-card .card-img-top-food
+{
+    max-width: 70%;
+    height: 300px; /* Atur tinggi gambar sesuai kebutuhan Anda */
+    object-fit: cover;
+}
+  
+  /* Card Body */
+  .card-body {
+    height: 200px; /* Tinggi body card */
+    overflow: hidden; /* Mengatasi teks yang berlebihan */
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 20px; /* Ukuran teks judul card */
+    text-align: center;
+  }
+  
+  /* Card Text */
+  .card-text {
+    font-size: 16px; /* Ukuran teks konten card */
+    text-align: left; /* Posisi tulisan di kiri */
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Custom Styles */
+  .custom-card {
+    margin-bottom: 30px; /* Margin antar card */
+    border-radius: 15px; /* Border radius pada card */
+    overflow: hidden; /* Mengatasi overflow dari gambar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow pada card */
+    display: flex;
+    justify-content: center; /* Untuk posisi horizontal */
+    align-items: center;
+  }
+    
+  .mb-3 input, .mb-3 textarea, .mb-3 select{
+      background-color: #f0f0f0; 
+  }
+  
+  .service-detail {
+      display: inline-block;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 10px;
+      width: 250px;
+      padding: 10px;
+  }
+  
+  .service:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      background-color: #f9f9f9;
+      transition: opacity .0.6s ease;
+  }
+  
+  
+  .rating {
+      display: inline-block;
+      align-items: left;
+      justify-content: left;
+  }
+  
+  .rating input[type="radio"] {
+      display: none;
+  }
+  
+  .rating label {
+      font-size: 2em;
+      float: right;
+      color: #bbb;
+  }
+  
+  .rating input[type="radio"]:checked ~ label {
+      color:  #f90;
+  }
+  
+  .rating-wrapper {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+  }
+  
+.text-dark {
+    background-color: rgb(248, 197, 148);
+}
+
+.pb-4{
+    font-family: 'The Hand', sans-serif;
+}
+
+.pb-5{
+    font-family: 'The Hand', sans-serif;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Letakkan gaya CSS untuk tampilan desktop di sini */
+    .navbar-brand {
+      font-size: 24px;
+    }
+    .navbar-nav .nav-link {
+      font-size: 18px;
+    }
+    .box {
+      padding: 20px;
+    }
+    .service img {
+      max-width: 100%;
+    }
+  }
+  
+  /* CSS untuk tampilan tablet */
+  @media only screen and (min-width: 700px) and (max-width: 1023px) {
+    /* Letakkan gaya CSS untuk tampilan tablet di sini */
+    .navbar-brand {
+      font-size: 20px;
+    }
+    .navbar-nav .nav-link {
+      font-size: 16px;
+    }
+    .box {
+      padding: 15px;
+    }
+    .service img {
+      max-width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) and (max-width: 768px){
+    .card-img-top {
+      height: 500px; /* Tinggi gambar card saat di layar kecil */
+    }
+  
+    .card-body {
+      height: auto; /* Tinggi body card saat di layar kecil */
+    }
+
+    .col-md-6 img{
+        padding: 0;
+    }
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgb(255, 0, 0);
+  }
+
+.dropdown-menu {
+  background-image: linear-gradient(to right, rgb(250, 223, 198), rgb(246, 209, 172)); /* Ubah nilai warna sesuai kebutuhan */
+}
+
+.content {
+  margin-top: 40px; /* Sesuaikan dengan tinggi navbar */
+  /* Anda bisa menyesuaikan nilai margin-top sesuai dengan tinggi navbar Anda */
+}
+

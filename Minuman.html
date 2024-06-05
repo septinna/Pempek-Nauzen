@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pempek Nauzen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/monchila" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <div class="dive mb-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <!-- Nauzen (sebelah kiri) -->
+            <a class="navbar-brand custom-link" href="Index.html">
+                <span class="custom-span">N</span>auzen
+            </a>
+    
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Menggunakan ml-auto untuk menjadikan elemen di sisi kanan -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                            <a class="dropdown-item" href="Makanan.html">Makanan</a>
+                            <a class="dropdown-item" href="Minuman.html">Minuman</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="layanan.html">Pelayanan</a>
+                  </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://wa.me/+6281388446163" target="_blank">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline my-2 my-lg-0 mr-3">
+                          <input type="text" id="searchInput" class="form-control mb-3" onkeyup="searchFunction()" placeholder="Cari minuman...">
+                          </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+</div>  
+  <div class="container content">
+    <h2 class="fw-bold mt-4 mb-3 text-center">Menu Minuman</h2>
+    <div class="row" id="menuItems">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/es-teh.png" class="card-img-top img-fluid" alt="Es Teh">
+              <div class="card-body">
+                <h5 class="card-title">Es Teh</h5>
+                <p class="card-text">Segelas es teh manis.</p>
+                <p class="card-text">Harga: Rp 5.000,-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/jeruk.png" class="card-img-top img-fluid" alt="Es Jeruk" >
+              <div class="card-body">
+                <h5 class="card-title">Es Jeruk</h5>
+                <p class="card-text">Segelas es jeruk manis.</p>
+                <p class="card-text">Harga: Rp 7.000,-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/escampur.png" class="card-img-top img-fluid" alt="Es Campur">
+              <div class="card-body">
+                <h5 class="card-title">Es Campur</h5>
+                <p class="card-text">Segelas es campur segar.</p>
+                <p class="card-text">Harga: Rp 8.000,-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/lemon.png" class="card-img-top img-fluid" alt="Lemon Tea">
+              <div class="card-body">
+                <h5 class="card-title">Lemon Tea</h5>
+                <p class="card-text">Segelas lemon tea segar.</p>
+                <p class="card-text">Harga: Rp 6.000,-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/susu.png" class="card-img-top img-fluid" alt="Es Susu">
+              <div class="card-body">
+                <h5 class="card-title">Es Susu</h5>
+                <p class="card-text">Segelas es susu.</p>
+                <p class="card-text">Harga: Rp 8.000,-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card custom-card">
+              <img src="img/sodagembira.png" class="card-img-top img-fluid" alt="Soda Gembira">
+              <div class="card-body">
+                <h5 class="card-title">Soda Gembira</h5>
+                <p class="card-text">Segelas soda gembira.</p>
+                <p class="card-text">Harga: Rp 9.000,-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+<footer class="text-dark py-4">
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-4">
+            <h5 class="fw-bold">Informasi Kontak</h5>
+            <p>Email: nauzen@gmail.com</p>
+            <p>WhatsApp: <a class="kontak" href="http://wa.me/+6281388446163"> 081388446163</a></p>
+        </div>
+        <div class="col-md-2">
+            <h5 class="fw-bold">Menu Utama</h5>
+            <ul class="list-unstyled">
+                <li><a href="Index.html">Beranda</a></li>
+                <li><a href="layanan.html">Pelayanan</a></li>
+            </ul>
+        </div>
+        <div class="col-md-7 mx-auto text-center">
+            <p>&copy; 2024 Happy Shopping With Pempek Nauzen | All rights reserved.</p>
+        </div>                
+    </div>
+</div>
+</footer>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".navbar").classList.remove("fixed-top");
+        } else {
+            document.querySelector(".navbar").classList.add("fixed-top");
+        }
+    }
+
+    // Data menu minuman
+var menuItems = [
+    { name: "Es Teh", description: "Segelas es teh manis.", price: "Rp 5.000,-", imgSrc: "img/es-teh.png" },
+    { name: "Es Jeruk", description: "Segelas es jeruk manis.", price: "Rp 7.000,-", imgSrc: "img/jeruk.png" },
+    { name: "Es Campur", description: "Segelas es campur segar.", price: "Rp 8.000,-", imgSrc: "img/escampur.png" },
+    { name: "Lemon Tea", description: "Segelas lemon tea segar.", price: "Rp 6.000,-", imgSrc: "img/lemon.png" },
+    { name: "Es Susu", description: "Segelas es susu.", price: "Rp 8.000,-", imgSrc: "img/susu.png" },
+    { name: "Soda Gembira", description: "Segelas soda gembira.", price: "Rp 9.000,-", imgSrc: "img/sodagembira.png" }
+];
+
+// Fungsi untuk menampilkan menu minuman
+function displayMenuItems(items) {
+    var menuContainer = document.getElementById('menuItems');
+    menuContainer.innerHTML = '';
+
+    items.forEach(function(item) {
+        var cardHtml = `
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="card custom-card">
+            <img src="${item.imgSrc}" class="card-img-top img-fluid" alt="${item.name}">
+            <div class="card-body">
+              <h5 class="card-title">${item.name}</h5>
+              <p class="card-text">${item.description}</p>
+              <p class="card-text">Harga: ${item.price}</p>
+            </div>
+          </div>
+        </div>
+        `;
+        menuContainer.innerHTML += cardHtml;
+    });
+}
+
+// Fungsi untuk melakukan pencarian
+function searchFunction() {
+    var input, filter, filteredItems;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    
+    // Mencari item yang cocok dengan kata kunci pencarian
+    filteredItems = menuItems.filter(function(item) {
+        return item.name.toUpperCase().includes(filter);
+    });
+
+    // Menampilkan item yang cocok
+    displayMenuItems(filteredItems);
+}
+
+// Menampilkan semua menu minuman saat pertama kali memuat halaman
+displayMenuItems(menuItems);
+  </script>
+
+  
+
+<!-- Bootstrap JS and jQuery (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="Minuman.js"></script> -->
+</body>
+</html>
